@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400;1,700&family=PT+Sans&family=Roboto:wght@400;900&display=swap");
+@font-face {
+  font-family: Post No Bills Jaffna;
+  src: url(Fonts/PostNoBillsJaffna-Bold.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+.header-wrapper {
+  padding-top: 14px;
+  color: var(--gray, #969696);
+  font-family: PT Sans;
+  font-size: 12px;
+  font-weight: 400;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 30%;
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+
+    &_log {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  &__block {
+    display: flex;
+    margin-right: 10px;
+    gap: 15px;
+  }
+}
+
+.nav-wrapper {
+  width: 60%;
+  margin-left: 20%;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    color: #fff;
+    font-family: Post No Bills Jaffna;
+    font-size: 36px;
+    font-weight: 700;
+    padding: 30px 20px;
+    margin-right: 37%;
+  }
+}
+.nav {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    text-decoration: none;
+    color: var(--gray, #969696);
+    font-family: PT Sans;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 30px 20px;
+
+    &_length {
+      width: 138px;
+    }
+  }
+  &__link:hover {
+    color: #fff;
+    background-color: #1f1f1f;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-wrapper {
+    &__block {
+      &_log {
+        display: none;
+      }
+    }
+  }
+}
