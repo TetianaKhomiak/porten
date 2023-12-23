@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400;1,700&family=PT+Sans&family=Roboto:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400;1,700&family=PT+Sans&family=Playfair+Display+SC:wght@700&family=Playfair+Display:wght@700&family=Roboto:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400;1,700&family=PT+Sans&family=Playfair+Display+SC:wght@700&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;900&display=swap");
 @font-face {
   font-family: Post No Bills Jaffna;
   src: url(Fonts/PostNoBillsJaffna-Bold.ttf);
@@ -124,6 +126,92 @@
   margin: 0 auto;
   text-align: center;
   margin-top: 4.2%;
+}
+
+.catalog {
+  display: flex;
+}
+
+.season {
+  width: 54.2%;
+  background: #000;
+}
+.season__title {
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 9%;
+}
+.season__underline {
+  background: #fff;
+  height: 1px;
+  width: 120px;
+  margin: 4.8% auto;
+}
+.season__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+.season__icon {
+  background: rgb(25, 27, 28);
+  padding: 15%;
+  max-width: 100%;
+}
+.season__text {
+  color: var(--white, #fff);
+  font-family: Playfair Display;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 25px;
+}
+.season__price {
+  color: var(--light-gray, #d0d0d0);
+  font-family: Playfair Display;
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.new-collection {
+  background: url(IMG/background_new_collection.png) no-repeat;
+  background-size: cover;
+  width: 45.8%;
+}
+.new-collection__title {
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 55%;
+}
+.new-collection__underline {
+  background: #fff;
+  height: 1px;
+  width: 120px;
+  margin: 30px auto;
+}
+.new-collection__btn {
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  border: 1px solid var(--white, #fff);
+  background: transparent;
+  display: inline-flex;
+  padding: 12px 28px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 11.4%;
 }
 
 @media (max-width: 1700px) {
