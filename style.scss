@@ -120,12 +120,6 @@
   .header-wrapper {
     width: 100%;
     font-size: 10px;
-    &__icon {
-      vertical-align: -5px;
-      &_log {
-        vertical-align: -5px;
-      }
-    }
   }
 
   .nav {
@@ -214,7 +208,7 @@
   .device-menu {
     position: fixed;
     top: 70px;
-    right: 10px;
+    right: 40px;
     width: 55px;
     height: 50px;
     z-index: 11;
@@ -261,7 +255,7 @@
   }
 
   .device-menu.open {
-    top: 10px;
+    top: 30px;
   }
 
   .device-menu.open span:nth-child(1) {

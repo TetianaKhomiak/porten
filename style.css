@@ -108,12 +108,6 @@
     width: 100%;
     font-size: 10px;
   }
-  .header-wrapper__icon {
-    vertical-align: -5px;
-  }
-  .header-wrapper__icon_log {
-    vertical-align: -5px;
-  }
   .nav {
     display: none;
   }
@@ -183,7 +177,7 @@
   .device-menu {
     position: fixed;
     top: 70px;
-    right: 10px;
+    right: 40px;
     width: 55px;
     height: 50px;
     z-index: 11;
@@ -221,7 +215,7 @@
     transition: rotate, 0.3s;
   }
   .device-menu.open {
-    top: 10px;
+    top: 30px;
   }
   .device-menu.open span:nth-child(1) {
     top: 10px;
