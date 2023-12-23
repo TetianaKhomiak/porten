@@ -7,9 +7,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #000;
 }
 
+.header {
+  background-color: #000;
+}
 .header-wrapper {
   padding-top: 14px;
   color: var(--gray, #969696);
@@ -37,6 +39,10 @@
   &__block {
     &_el {
       padding-right: 20px;
+    }
+
+    &_log {
+      cursor: pointer;
     }
   }
 }
@@ -82,6 +88,57 @@
 .mobile {
   display: none;
 }
+
+.porten {
+  &__wrapper {
+    background: url("IMG/background.png") no-repeat;
+    background-size: 100% 100%;
+    padding-top: 8.5%;
+    padding-bottom: 7.5%;
+  }
+
+  &__logo {
+    color: #fff;
+    text-align: center;
+    font-family: Post No Bills Jaffna;
+    font-size: 64px;
+    font-weight: 700;
+    padding: 5% 3.2%;
+    width: 340px;
+    margin: 0 auto;
+    border: #fff 4px solid;
+
+    &_border {
+      border-bottom: #fff 2px solid;
+      line-height: 60px;
+      width: 179px;
+      margin: 0 auto;
+    }
+
+    &_small {
+      font-family: PT Sans;
+      font-size: 22px;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding-top: 7px;
+    }
+  }
+
+  &__text {
+    color: #fff;
+    text-align: center;
+    font-family: PT Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    text-transform: uppercase;
+    width: 38%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 4.2%;
+  }
+}
+
 @media (max-width: 1700px) {
   .header-wrapper {
     width: 70%;
@@ -105,6 +162,12 @@
   .nav-wrapper {
     width: 85%;
   }
+
+  .porten {
+    &__text {
+      width: 60%;
+    }
+  }
 }
 
 @media (max-width: 1024px) {
@@ -113,6 +176,13 @@
     align-items: center;
     gap: 10px;
     width: 80%;
+  }
+
+  .porten {
+    &__text {
+      width: 70%;
+      font-size: 14px;
+    }
   }
 }
 
@@ -207,7 +277,7 @@
 
   .device-menu {
     position: fixed;
-    top: 70px;
+    top: 65px;
     right: 40px;
     width: 55px;
     height: 50px;
@@ -274,5 +344,43 @@
     right: 0;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
+  }
+
+  .porten {
+    &__wrapper {
+      background-position: center center;
+      background-size: cover;
+    }
+    &__text {
+      width: 85%;
+      font-size: 12px;
+    }
+    &__logo {
+      font-size: 56px;
+      width: 250px;
+
+      &_border {
+        width: 170px;
+      }
+      &_small {
+        font-size: 18px;
+        width: 170px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .porten {
+    &__text {
+      font-size: 10px;
+    }
+    &__logo {
+      font-size: 48px;
+    }
+    &_small {
+      font-size: 16px;
+    }
   }
 }

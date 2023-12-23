@@ -7,6 +7,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.header {
   background-color: #000;
 }
 
@@ -34,6 +37,9 @@
 }
 .header-wrapper__block_el {
   padding-right: 20px;
+}
+.header-wrapper__block_log {
+  cursor: pointer;
 }
 
 .nav-wrapper {
@@ -76,6 +82,50 @@
   display: none;
 }
 
+.porten__wrapper {
+  background: url("IMG/background.png") no-repeat;
+  background-size: 100% 100%;
+  padding-top: 8.5%;
+  padding-bottom: 7.5%;
+}
+.porten__logo {
+  color: #fff;
+  text-align: center;
+  font-family: Post No Bills Jaffna;
+  font-size: 64px;
+  font-weight: 700;
+  padding: 5% 3.2%;
+  width: 340px;
+  margin: 0 auto;
+  border: #fff 4px solid;
+}
+.porten__logo_border {
+  border-bottom: #fff 2px solid;
+  line-height: 60px;
+  width: 179px;
+  margin: 0 auto;
+}
+.porten__logo_small {
+  font-family: PT Sans;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 7px;
+}
+.porten__text {
+  color: #fff;
+  text-align: center;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  text-transform: uppercase;
+  width: 38%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 4.2%;
+}
+
 @media (max-width: 1700px) {
   .header-wrapper {
     width: 70%;
@@ -94,6 +144,9 @@
   .nav-wrapper {
     width: 85%;
   }
+  .porten__text {
+    width: 60%;
+  }
 }
 @media (max-width: 1024px) {
   .header-wrapper {
@@ -101,6 +154,10 @@
     align-items: center;
     gap: 10px;
     width: 80%;
+  }
+  .porten__text {
+    width: 70%;
+    font-size: 14px;
   }
 }
 @media (max-width: 768px) {
@@ -176,7 +233,7 @@
   }
   .device-menu {
     position: fixed;
-    top: 70px;
+    top: 65px;
     right: 40px;
     width: 55px;
     height: 50px;
@@ -229,5 +286,36 @@
     top: 10px;
     right: 0;
     transform: rotate(-45deg);
+  }
+  .porten__wrapper {
+    background-position: center center;
+    background-size: cover;
+  }
+  .porten__text {
+    width: 85%;
+    font-size: 12px;
+  }
+  .porten__logo {
+    font-size: 56px;
+    width: 250px;
+  }
+  .porten__logo_border {
+    width: 170px;
+  }
+  .porten__logo_small {
+    font-size: 18px;
+    width: 170px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 375px) {
+  .porten__text {
+    font-size: 10px;
+  }
+  .porten__logo {
+    font-size: 48px;
+  }
+  .porten_small {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
