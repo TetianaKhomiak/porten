@@ -5,6 +5,32 @@
   font-family: Post No Bills Jaffna;
   src: url(Fonts/PostNoBillsJaffna-Bold.ttf);
 }
+@mixin title {
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@mixin title-article {
+  color: var(--white, #fff);
+  font-family: PT Sans;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+@mixin text-article {
+  color: var(--white, #fff);
+  font-family: PT Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -378,6 +404,65 @@
   display: none;
 }
 
+.article {
+  background: #0f0f0f;
+
+  &__title {
+    @include title;
+    padding: 3.3% 0 2% 0;
+  }
+
+  &__underline {
+    width: 120px;
+    margin: auto;
+    margin-bottom: 3%;
+  }
+}
+
+.brand {
+  background: #0f0f0f;
+  display: flex;
+
+  &__icon {
+    width: 55%;
+  }
+
+  &__container {
+    width: 67.5%;
+    margin: 0 auto;
+  }
+
+  &__title {
+    @include title-article;
+    padding-top: 8.5%;
+  }
+
+  &__text {
+    @include text-article;
+    padding-top: 14px;
+  }
+
+  &__hashtags {
+    @include title-article;
+    align-self: flex-end;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6.2%;
+  }
+
+  &__btn {
+    @include title-article;
+    text-align: center;
+    border: 1px solid var(--white, #fff);
+    background: transparent;
+    padding: 2% 4.5%;
+    cursor: pointer;
+  }
+}
+
 @media (max-width: 1700px) {
   .header-wrapper {
     width: 70%;
@@ -436,6 +521,24 @@
       -webkit-line-clamp: 4;
     }
   }
+
+  .brand {
+    &__container {
+      width: 90%;
+    }
+
+    &__title {
+      padding-top: 4%;
+    }
+
+    &__text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 5;
+    }
+  }
 }
 
 @media (max-width: 1024px) {
@@ -469,7 +572,6 @@
   }
   .container {
     display: block;
-    margin-bottom: 40px;
   }
 
   .swiper {
@@ -492,6 +594,18 @@
 
   .swiper-pagination-bullet {
     background-color: #fff !important;
+  }
+
+  .brand {
+    flex-direction: column;
+
+    &__icon {
+      width: 100%;
+    }
+
+    &__container {
+      margin-bottom: 5%;
+    }
   }
 }
 
@@ -752,6 +866,19 @@
   .swiper-button-prev {
     color: #fff !important;
     top: 35% !important;
+  }
+
+  .article {
+    &__title {
+      font-size: 30px;
+    }
+  }
+
+  .brand {
+    &__hashtags,
+    &__btn {
+      font-size: 14px;
+    }
   }
 }
 
