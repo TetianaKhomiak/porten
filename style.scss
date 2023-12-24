@@ -422,6 +422,7 @@
 .brand {
   background: #0f0f0f;
   display: flex;
+  margin-top: 1.5%;
 
   &__icon {
     width: 55%;
@@ -429,7 +430,7 @@
 
   &__container {
     width: 67.5%;
-    margin: 0 auto;
+    margin: auto;
   }
 
   &__title {
@@ -445,12 +446,21 @@
   &__hashtags {
     @include title-article;
     align-self: flex-end;
+
+    &_last {
+      float: right;
+      padding-top: 20px;
+    }
   }
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
     padding-top: 6.2%;
+
+    &_last {
+      display: block;
+    }
   }
 
   &__btn {
@@ -463,29 +473,58 @@
   }
 }
 
-@media (max-width: 1700px) {
-  .header-wrapper {
-    width: 70%;
-    &__block {
-      &_el {
-        padding-right: 10px;
+.partners {
+  background: #0f0f0f;
+
+  &__title {
+    @include title;
+    padding: 4.65% 0 2.2% 0;
+  }
+
+  &__underline {
+    background: #fff;
+    height: 1px;
+    width: 120px;
+    margin: 4.8% auto;
+  }
+
+  &__wrapper {
+    width: 75%;
+    margin: 0 auto;
+    padding: 5% 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  &__icon {
+    width: 20%;
+  }
+
+  @media (max-width: 1700px) {
+    .header-wrapper {
+      width: 70%;
+      &__block {
+        &_el {
+          padding-right: 10px;
+        }
       }
     }
-  }
 
-  .nav-wrapper {
-    width: 70%;
-  }
-
-  .collection {
-    &__article {
-      width: 40%;
+    .nav-wrapper {
+      width: 70%;
     }
-  }
 
-  .new-arrival {
-    &__wrapper {
-      width: 80%;
+    .collection {
+      &__article {
+        width: 40%;
+      }
+    }
+
+    .new-arrival {
+      &__wrapper {
+        width: 80%;
+      }
     }
   }
 }
@@ -878,6 +917,14 @@
     &__hashtags,
     &__btn {
       font-size: 14px;
+    }
+  }
+
+  .partners {
+    background: #0f0f0f;
+
+    &__title {
+      font-size: 30px;
     }
   }
 }
