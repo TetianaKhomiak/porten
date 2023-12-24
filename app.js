@@ -12,3 +12,28 @@ openMobileMenuBtn.addEventListener("click", () => {
     openMobileMenuBtn.classList.add("open");
   }
 });
+
+const swiper = new Swiper(".swiper-slider", {
+  spaceBetween: 20,
+  centeredSlides: true,
+  slidesPerView: 3,
+  slidesPerColumn: 1,
+  grabCursor: true,
+  freeMode: false,
+  loop: false,
+  mousewheel: false,
+  keyboard: {
+    enabled: true,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: false,
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

@@ -175,7 +175,7 @@
   &__icon {
     background: rgba(25, 27, 28, 1);
     padding: 15%;
-    max-width: 100%;
+    width: 100%;
   }
 
   &__text {
@@ -341,7 +341,7 @@
     font-family: Playfair Display;
     font-size: 18px;
     font-weight: 400;
-    padding-top: 25px;
+    padding-top: 2%;
   }
 
   &__price {
@@ -350,7 +350,7 @@
     font-size: 16px;
     font-weight: 700;
     padding-bottom: 15.5%;
-    padding-top: 10px;
+    padding-top: 1%;
   }
 
   &__last {
@@ -372,6 +372,10 @@
     width: 190px;
     padding: 12px 28px;
   }
+}
+
+.container {
+  display: none;
 }
 
 @media (max-width: 1700px) {
@@ -416,6 +420,13 @@
     }
   }
 
+  .season {
+    &__wrapper {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
   .collection {
     &__text {
       overflow: hidden;
@@ -440,6 +451,47 @@
       width: 70%;
       font-size: 14px;
     }
+  }
+
+  .season {
+    &__text {
+      height: 74px;
+    }
+  }
+  .new-arrival {
+    &__wrapper {
+      display: none;
+    }
+
+    &__icon {
+      width: 100%;
+    }
+  }
+  .container {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .swiper {
+    height: 40%;
+  }
+
+  .swiper-wrapper {
+    left: -27%;
+  }
+
+  .swiper-button-next {
+    color: #fff !important;
+    top: 35% !important;
+  }
+
+  .swiper-button-prev {
+    color: #fff !important;
+    top: 35% !important;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: #fff !important;
   }
 }
 
@@ -634,6 +686,19 @@
   .season {
     width: 100%;
     padding-bottom: 10%;
+    &__text {
+      height: auto;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      font-size: 16px;
+    }
+
+    &__price {
+      font-size: 14px;
+    }
   }
 
   .new-collection {
@@ -656,6 +721,37 @@
     &__btn {
       width: 60%;
     }
+  }
+
+  .new-arrival {
+    &__title {
+      font-size: 36px;
+    }
+
+    &__text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      font-size: 16px;
+    }
+
+    &__price {
+      font-size: 14px;
+    }
+  }
+  :root {
+    --swiper-navigation-size: 30px !important;
+  }
+  .swiper-button-next {
+    color: #fff !important;
+    top: 35% !important;
+  }
+
+  .swiper-button-prev {
+    color: #fff !important;
+    top: 35% !important;
   }
 }
 
@@ -681,6 +777,18 @@
       &__title {
         font-size: 30px;
       }
+    }
+  }
+
+  .swiper {
+    height: 220px;
+  }
+
+  .new-arrival {
+    &__title {
+      font-size: 30px;
+
+      padding-top: 1%;
     }
   }
 }

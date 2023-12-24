@@ -159,7 +159,7 @@
 .season__icon {
   background: rgb(25, 27, 28);
   padding: 15%;
-  max-width: 100%;
+  width: 100%;
 }
 .season__text {
   color: var(--white, #fff);
@@ -307,7 +307,7 @@
   font-family: Playfair Display;
   font-size: 18px;
   font-weight: 400;
-  padding-top: 25px;
+  padding-top: 2%;
 }
 .new-arrival__price {
   color: var(--light-gray, #d0d0d0);
@@ -315,7 +315,7 @@
   font-size: 16px;
   font-weight: 700;
   padding-bottom: 15.5%;
-  padding-top: 10px;
+  padding-top: 1%;
 }
 .new-arrival__last {
   position: relative;
@@ -334,6 +334,10 @@
   cursor: pointer;
   width: 190px;
   padding: 12px 28px;
+}
+
+.container {
+  display: none;
 }
 
 @media (max-width: 1700px) {
@@ -363,6 +367,10 @@
   .porten__text {
     width: 60%;
   }
+  .season__wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
   .collection__text {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -381,6 +389,36 @@
   .porten__text {
     width: 70%;
     font-size: 14px;
+  }
+  .season__text {
+    height: 74px;
+  }
+  .new-arrival__wrapper {
+    display: none;
+  }
+  .new-arrival__icon {
+    width: 100%;
+  }
+  .container {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .swiper {
+    height: 40%;
+  }
+  .swiper-wrapper {
+    left: -27%;
+  }
+  .swiper-button-next {
+    color: #fff !important;
+    top: 35% !important;
+  }
+  .swiper-button-prev {
+    color: #fff !important;
+    top: 35% !important;
+  }
+  .swiper-pagination-bullet {
+    background-color: #fff !important;
   }
 }
 @media (max-width: 768px) {
@@ -537,6 +575,18 @@
     width: 100%;
     padding-bottom: 10%;
   }
+  .season__text {
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    font-size: 16px;
+  }
+  .season__price {
+    font-size: 14px;
+  }
   .new-collection {
     width: 100%;
   }
@@ -551,6 +601,31 @@
   }
   .collection__btn {
     width: 60%;
+  }
+  .new-arrival__title {
+    font-size: 36px;
+  }
+  .new-arrival__text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    font-size: 16px;
+  }
+  .new-arrival__price {
+    font-size: 14px;
+  }
+  :root {
+    --swiper-navigation-size: 30px !important;
+  }
+  .swiper-button-next {
+    color: #fff !important;
+    top: 35% !important;
+  }
+  .swiper-button-prev {
+    color: #fff !important;
+    top: 35% !important;
   }
 }
 @media (max-width: 375px) {
@@ -568,5 +643,12 @@
   }
   .season .new-collection__title {
     font-size: 30px;
+  }
+  .swiper {
+    height: 220px;
+  }
+  .new-arrival__title {
+    font-size: 30px;
+    padding-top: 1%;
   }
 }/*# sourceMappingURL=style.css.map */
