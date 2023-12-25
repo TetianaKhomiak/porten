@@ -53,6 +53,10 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   background-color: #000;
 }
@@ -564,6 +568,7 @@
     padding: 20px 10px;
     background: #0f0f0f;
     margin-bottom: 5%;
+    cursor: pointer;
   }
 
   &__item:hover {
@@ -778,8 +783,19 @@
   .company {
     order: 1;
     width: 100%;
-  }
-  .categories {
+
+    &__title {
+      width: 250px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    &__title::after {
+    }
+
+    &__text {
+      display: none;
+    }
   }
 
   .mailing {
