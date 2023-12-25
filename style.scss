@@ -80,26 +80,17 @@ a {
   justify-content: space-between;
 
   &__icon {
-    width: 16px;
-    height: 16px;
-    padding-right: 2%;
+    width: 14px;
+    height: 14px;
     vertical-align: -3px;
-
-    &_log {
-      width: 14px;
-      height: 14px;
-      vertical-align: -3px;
-    }
   }
 
-  &__block {
-    &_el {
-      padding-right: 20px;
-    }
+  &__el {
+    padding-right: 20px;
+  }
 
-    &_log {
-      cursor: pointer;
-    }
+  &__log {
+    cursor: pointer;
   }
 }
 
@@ -354,7 +345,7 @@ a {
     background: #191b1c;
     padding: 30px 22px;
 
-    &_last {
+    &_blur {
       filter: blur(3px);
     }
   }
@@ -437,7 +428,7 @@ a {
     @include title-article;
     align-self: flex-end;
 
-    &_last {
+    &_wrapped {
       float: right;
       padding-top: 20px;
     }
@@ -447,10 +438,6 @@ a {
     display: flex;
     justify-content: space-between;
     padding-top: 6.2%;
-
-    &_last {
-      display: block;
-    }
   }
 
   &__btn {
@@ -625,10 +612,8 @@ a {
 @media (max-width: 1700px) {
   .header-wrapper {
     width: 70%;
-    &__block {
-      &_el {
-        padding-right: 10px;
-      }
+    &__el {
+      padding-right: 10px;
     }
   }
 
