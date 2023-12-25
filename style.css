@@ -458,7 +458,8 @@ a {
 
 .footer {
   background: url(IMG/background_footer.png) no-repeat;
-  width: 100%;
+  background-size: cover;
+  background-position: center center;
 }
 .footer__wrapper {
   padding-top: 4.2%;
@@ -471,6 +472,9 @@ a {
 
 .company {
   width: 32%;
+}
+.company__btn {
+  display: none;
 }
 .company__title {
   color: #fff;
@@ -692,9 +696,26 @@ a {
   .company {
     order: 1;
     width: 100%;
+    display: flex;
+    padding: 20px 0;
+  }
+  .company__btn {
+    display: inline-block;
+    color: var(--white, #fff);
+    font-family: PT Sans;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid var(--white, #fff);
+    background: transparent;
+    padding: 1% 3.5%;
+    cursor: pointer;
   }
   .company__title {
-    width: 250px;
+    width: 210px;
     cursor: pointer;
     position: relative;
   }
@@ -922,6 +943,21 @@ a {
   }
   .partners__title {
     font-size: 30px;
+  }
+  .footer__wrapper {
+    flex-direction: column;
+  }
+  .categories {
+    width: 85%;
+  }
+  .categories__title {
+    padding-bottom: 20px;
+  }
+  .mailing {
+    width: 85%;
+  }
+  .mailing__title {
+    padding-bottom: 20px;
   }
 }
 @media (max-width: 375px) {
