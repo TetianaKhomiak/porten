@@ -79,6 +79,10 @@ a {
   display: flex;
   justify-content: space-between;
 
+  &__img {
+    vertical-align: -3px;
+  }
+
   &__icon {
     width: 14px;
     height: 14px;
@@ -1140,6 +1144,13 @@ a {
 }
 
 @media (max-width: 375px) {
+  .header-wrapper {
+    &__mobile {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
   .porten {
     &__text {
       font-size: 10px;
@@ -1169,6 +1180,12 @@ a {
       font-size: 30px;
 
       padding-top: 1%;
+    }
+  }
+
+  .mailing {
+    &__btn {
+      font-size: 12px;
     }
   }
 }

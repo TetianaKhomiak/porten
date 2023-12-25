@@ -30,6 +30,9 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.header-wrapper__img {
+  vertical-align: -3px;
+}
 .header-wrapper__icon {
   width: 14px;
   height: 14px;
@@ -1005,6 +1008,11 @@ a {
   }
 }
 @media (max-width: 375px) {
+  .header-wrapper__mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .porten__text {
     font-size: 10px;
   }
@@ -1023,5 +1031,8 @@ a {
   .new-arrival__title {
     font-size: 30px;
     padding-top: 1%;
+  }
+  .mailing__btn {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=style.css.map */
