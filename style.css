@@ -40,6 +40,11 @@ a {
 }
 .header-wrapper__el {
   padding-right: 20px;
+  text-decoration: none;
+  color: var(--gray, #969696);
+  font-family: PT Sans;
+  font-size: 12px;
+  font-weight: 400;
 }
 .header-wrapper__log {
   cursor: pointer;
