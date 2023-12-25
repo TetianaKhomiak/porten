@@ -400,8 +400,10 @@ a {
   align-self: flex-end;
 }
 .brand__hashtags_wrapped {
-  float: right;
   padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 .brand__wrapper {
   display: flex;
@@ -420,6 +422,9 @@ a {
   background: transparent;
   padding: 2% 4.5%;
   cursor: pointer;
+}
+.brand__btn_margin {
+  margin-right: 10%;
 }
 
 .partners {

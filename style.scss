@@ -429,8 +429,10 @@ a {
     align-self: flex-end;
 
     &_wrapped {
-      float: right;
       padding-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
     }
   }
 
@@ -447,6 +449,10 @@ a {
     background: transparent;
     padding: 2% 4.5%;
     cursor: pointer;
+
+    &_margin {
+      margin-right: 10%;
+    }
   }
 }
 
