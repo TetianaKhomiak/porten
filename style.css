@@ -119,12 +119,13 @@ a {
   padding-top: 7px;
 }
 .porten__text {
-  color: #fff;
-  text-align: center;
+  color: var(--white, #fff);
   font-family: PT Sans;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 150%;
+  text-align: center;
+  font-size: 16px;
   text-transform: uppercase;
   width: 38%;
   margin: 0 auto;
@@ -173,8 +174,10 @@ a {
   padding-top: 25px;
 }
 .season__price {
-  color: var(--light-gray, #d0d0d0);
+  color: var(--white, #fff);
   font-family: Playfair Display;
+  font-size: 18px;
+  font-weight: 400;
   font-size: 16px;
   font-weight: 700;
   padding-top: 10px;
@@ -238,7 +241,7 @@ a {
   text-align: center;
   font-family: Playfair Display;
   font-size: 36px;
-  font-weight: 400;
+  font-weight: 700;
   text-transform: uppercase;
 }
 .collection__underline {
@@ -249,11 +252,11 @@ a {
 }
 .collection__text {
   color: var(--white, #fff);
-  text-align: center;
   font-family: PT Sans;
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
+  text-align: center;
   margin-bottom: 10.2%;
 }
 .collection__btn {
@@ -315,7 +318,10 @@ a {
 }
 .new-arrival__price {
   color: var(--light-gray, #d0d0d0);
+  color: var(--white, #fff);
   font-family: Playfair Display;
+  font-size: 18px;
+  font-weight: 400;
   font-size: 16px;
   font-weight: 700;
   padding-bottom: 15.5%;
@@ -329,7 +335,6 @@ a {
   left: 14%;
   top: 30%;
   color: var(--white, #fff);
-  text-align: center;
   font-family: Playfair Display;
   font-size: 18px;
   font-weight: 400;

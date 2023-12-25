@@ -5,6 +5,7 @@
   font-family: Post No Bills Jaffna;
   src: url(Fonts/PostNoBillsJaffna-Bold.ttf);
 }
+
 @mixin title {
   color: var(--white, #fff);
   text-align: center;
@@ -12,6 +13,13 @@
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+@mixin new-arrival {
+  color: var(--white, #fff);
+  font-family: Playfair Display;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 @mixin title-article {
@@ -173,12 +181,9 @@ a {
   }
 
   &__text {
-    color: #fff;
+    @include text-article;
     text-align: center;
-    font-family: PT Sans;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 150%;
     text-transform: uppercase;
     width: 38%;
     margin: 0 auto;
@@ -196,12 +201,7 @@ a {
   background: #000;
 
   &__title {
-    color: var(--white, #fff);
-    text-align: center;
-    font-family: Playfair Display;
-    font-size: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
+    @include title;
     padding-top: 9%;
   }
 
@@ -225,16 +225,12 @@ a {
   }
 
   &__text {
-    color: var(--white, #fff);
-    font-family: Playfair Display;
-    font-size: 18px;
-    font-weight: 400;
+    @include new-arrival;
     padding-top: 25px;
   }
 
   &__price {
-    color: var(--light-gray, #d0d0d0);
-    font-family: Playfair Display;
+    @include new-arrival;
     font-size: 16px;
     font-weight: 700;
     padding-top: 10px;
@@ -247,12 +243,7 @@ a {
   width: 45.8%;
 
   &__title {
-    color: var(--white, #fff);
-    text-align: center;
-    font-family: Playfair Display;
-    font-size: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
+    @include title;
     padding-top: 55%;
   }
 
@@ -301,12 +292,7 @@ a {
   }
 
   &__title {
-    color: var(--white, #fff);
-    text-align: center;
-    font-family: Playfair Display;
-    font-size: 36px;
-    font-weight: 400;
-    text-transform: uppercase;
+    @include title;
   }
 
   &__underline {
@@ -317,12 +303,8 @@ a {
   }
 
   &__text {
-    color: var(--white, #fff);
+    @include text-article;
     text-align: center;
-    font-family: PT Sans;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 150%;
     margin-bottom: 10.2%;
   }
 
@@ -346,12 +328,7 @@ a {
   background: #000;
 
   &__title {
-    color: var(--white, #fff);
-    text-align: center;
-    font-family: Playfair Display;
-    font-size: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
+    @include title;
     padding-top: 6.3%;
   }
 
@@ -383,16 +360,13 @@ a {
   }
 
   &__text {
-    color: var(--white, #fff);
-    font-family: Playfair Display;
-    font-size: 18px;
-    font-weight: 400;
+    @include new-arrival;
     padding-top: 2%;
   }
 
   &__price {
     color: var(--light-gray, #d0d0d0);
-    font-family: Playfair Display;
+    @include new-arrival;
     font-size: 16px;
     font-weight: 700;
     padding-bottom: 15.5%;
@@ -407,11 +381,7 @@ a {
     position: absolute;
     left: 14%;
     top: 30%;
-    color: var(--white, #fff);
-    text-align: center;
-    font-family: Playfair Display;
-    font-size: 18px;
-    font-weight: 400;
+    @include new-arrival;
     background: transparent;
     border: 1px solid var(--white, #fff);
     cursor: pointer;
