@@ -464,53 +464,64 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer__wrapper">
-        <div class="company">
-          <h4 class="company__title">про компанію</h4>
-          <button class="company__btn" type="button">читати</button>
-          <div class="company__text">
-            Компанія PORTEN – лідер на українському ринку годинників. На цей час
-            ми об'єднуємо більше сорока магазинів у різних куточках України та
-            інтернет-магазин, який став першим в нашому сегменті ринку. Торгова
-            мережа PORTEN – офіційний дистриб'ютор більше 50 найвідоміших
-            годинникових марок, починаючи від японської CASIO, закінчуючи
-            швейцарськими LONGINES, ZENITH, TAG HEUER. Однак компанія не
-            обмежується лише годинниками – в інтернет-магазині та бутіках мережі
-            ви знайдете прекрасні ювелірні вироби від таких іменитих брендів, як
-            SWAROVSKI и CHRISTINA.
+    <footer>
+      <section class="footer">
+        <div class="footer__wrapper">
+          <div class="company">
+            <h4 class="company__title">про компанію</h4>
+            <button class="company__btn" type="button">читати</button>
+            <div class="company__text">
+              Компанія PORTEN – лідер на українському ринку годинників. На цей
+              час ми об'єднуємо більше сорока магазинів у різних куточках
+              України та інтернет-магазин, який став першим в нашому сегменті
+              ринку. Торгова мережа PORTEN – офіційний дистриб'ютор більше 50
+              найвідоміших годинникових марок, починаючи від японської CASIO,
+              закінчуючи швейцарськими LONGINES, ZENITH, TAG HEUER. Однак
+              компанія не обмежується лише годинниками – в інтернет-магазині та
+              бутіках мережі ви знайдете прекрасні ювелірні вироби від таких
+              іменитих брендів, як SWAROVSKI и CHRISTINA.
+            </div>
+          </div>
+          <div class="categories">
+            <h3 class="categories__title">Категорії</h3>
+            <div class="categories__wrapper">
+              <div class="categories__item">годинники</div>
+              <div class="categories__item">запонки</div>
+              <div class="categories__item">ремені</div>
+              <div class="categories__item">ювелірні вироби</div>
+              <div class="categories__item">на замовлення</div>
+              <div class="categories__item">браслети</div>
+            </div>
+          </div>
+          <div class="mailing">
+            <h3 class="mailing__title">розсилка</h3>
+            <div class="mailing__text">
+              Компанія пропонує тільки оригінальну продукцію від найвідоміших
+              світових брендів за найкращою ціною. Ми дбаємо про комфорт наших
+              покупців і постійно розширюємо можливості сервісного
+              обслуговування.
+            </div>
+            <form action="" method="post">
+              <input
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                class="mailing__input"
+                type="email"
+                placeholder="Ваша пошта"
+                required
+              />
+              <button class="mailing__btn" type="submit">ПІДПИСАТИСЯ</button>
+            </form>
           </div>
         </div>
-        <div class="categories">
-          <h3 class="categories__title">Категорії</h3>
-          <div class="categories__wrapper">
-            <div class="categories__item">годинники</div>
-            <div class="categories__item">запонки</div>
-            <div class="categories__item">ремені</div>
-            <div class="categories__item">ювелірні вироби</div>
-            <div class="categories__item">на замовлення</div>
-            <div class="categories__item">браслети</div>
+      </section>
+      <section class="copyright">
+        <div class="copyright__container">
+          <div class="copyright__text">
+            © 2022 PORTEN, Інтернет-магазин годинників
           </div>
+          <a class="copyright__link" href="">Угода користувача</a>
         </div>
-        <div class="mailing">
-          <h3 class="mailing__title">розсилка</h3>
-          <div class="mailing__text">
-            Компанія пропонує тільки оригінальну продукцію від найвідоміших
-            світових брендів за найкращою ціною. Ми дбаємо про комфорт наших
-            покупців і постійно розширюємо можливості сервісного обслуговування.
-          </div>
-          <form action="" method="post">
-            <input
-              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-              class="mailing__input"
-              type="email"
-              placeholder="Ваша пошта"
-              required
-            />
-            <button class="mailing__btn" type="submit">ПІДПИСАТИСЯ</button>
-          </form>
-        </div>
-      </div>
+      </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./app.js"></script>
