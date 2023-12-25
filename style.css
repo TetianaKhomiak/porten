@@ -663,9 +663,6 @@ a {
   .container {
     display: block;
   }
-  .swiper {
-    height: 40%;
-  }
   .swiper-wrapper {
     left: -27%;
   }
@@ -679,6 +676,10 @@ a {
   }
   .swiper-pagination-bullet {
     background-color: #fff !important;
+  }
+  .swiper-horizontal {
+    padding-bottom: 40px !important;
+    padding-top: 40px !important;
   }
   .brand {
     flex-direction: column;
@@ -975,9 +976,6 @@ a {
   }
   .season .new-collection__title {
     font-size: 30px;
-  }
-  .swiper {
-    height: 220px;
   }
   .new-arrival__title {
     font-size: 30px;
