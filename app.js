@@ -13,27 +13,30 @@ openMobileMenuBtn.addEventListener("click", () => {
   }
 });
 
-const swiper = new Swiper(".swiper-slider", {
-  spaceBetween: 20,
-  centeredSlides: true,
+var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
-  slidesPerColumn: 1,
-  grabCursor: true,
-  freeMode: false,
-  loop: false,
-  mousewheel: false,
+  spaceBetween: 20,
   keyboard: {
     enabled: true,
   },
-
   pagination: {
     el: ".swiper-pagination",
-    dynamicBullets: false,
     clickable: true,
   },
-
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+
+window.addEventListener("resize", function () {
+  let screenWidth = window.innerWidth;
+
+  if (screenWidth < 600) {
+    swiper.params.spaceBetween = 10;
+  } else {
+    swiper.params.spaceBetween = 20;
+  }
+
+  swiper.update();
 });
