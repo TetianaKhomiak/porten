@@ -3,7 +3,7 @@
 ## Webpage Preview
 > https://tetianakhomiak.github.io/Porten/#
 
-> ## Features 📋
+ ## Features 📋
 ⚡️ HTML5                                                                                      
 ⚡️ SCSS & CSS3 
 ⚡️ BEM 
