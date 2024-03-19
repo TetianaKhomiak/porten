@@ -1,7 +1,7 @@
 # porten
 
 ## Webpage Preview
-> https://tetianakhomiak.github.io/Porten/#
+> https://tetianakhomiak.github.io/porten/
 
  ## Features 📋
  ⚡️ HTML5                                                                                                                                                             
